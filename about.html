@@ -2,82 +2,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Gomen be’Tena</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Gomen be'Tena</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--green:#173d31;--dark:#102a22;--cream:#f7f4eb;--gold:#c8a45d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:#34443c;line-height:1.8}
+header{background:var(--dark);padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{font-family:'Playfair Display',serif;color:white;font-size:24px;text-decoration:none;font-weight:bold}
+.logo span{display:block;color:var(--gold);font-size:14px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover,nav a.active{color:var(--gold)}
+.page-hero{background:var(--green);color:white;text-align:center;padding:90px 20px}
+.eyebrow{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:bold}
+h1,h2{font-family:'Playfair Display',serif}
+h1{font-size:55px;margin:15px 0}
+section{padding:75px 9%}
+h2{color:var(--green);font-size:34px;margin:25px 0 15px}
+p{margin-bottom:18px}
+.story{max-width:950px;margin:auto}
+.amharic{font-size:20px;line-height:2.2}
+.mission{background:#e9e8dc;text-align:center}
+footer{background:var(--dark);color:white;text-align:center;padding:35px}
+footer a{color:var(--gold);text-decoration:none}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center;gap:13px}h1{font-size:40px}section{padding:50px 7%}}
+</style>
 </head>
+
 <body>
 
-<header class="header">
-    <a href="index.html" class="logo">
-        Gomen be’Tena <span>ጎመን በጤና</span>
-    </a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="episodes.html">Episodes</a>
-        <a href="wellness.html">Wellness</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header>
+<a href="index.html" class="logo">Gomen be'Tena <span>ጎመን በጤና</span></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html" class="active">About</a>
+<a href="episodes.html">Episodes</a>
+<a href="wellness.html">Wellness</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
 <section class="page-hero">
-    <p class="eyebrow">OUR STORY</p>
-    <h1>About Gomen be’Tena</h1>
-    <p>Celebrating health, culture and meaningful conversations.</p>
+<p class="eyebrow">OUR STORY • OUR PURPOSE</p>
+<h1>About Gomen be'Tena</h1>
+<p>Celebrating health, culture and meaningful conversations.</p>
 </section>
 
-<section class="section">
-    <h2>Our Philosophy</h2>
+<section>
+<div class="story">
+<h2>Our Philosophy</h2>
+<p>
+They always say "ጎመን በጤና" — a traditional expression
+reminding us that peace of mind and good health are among
+life's greatest luxuries.
+</p>
+<p>
+We believe true wellness is not just physical. It is a harmony
+of mind, body, spirit and lifestyle.
+</p>
 
-    <p>
-        They always say "ጎመን በጤና" — a traditional expression
-        reminding us that peace of mind and good health are
-        among life's greatest luxuries.
-    </p>
+<h2>Our Mission</h2>
+<p>
+Our mission is to bridge the gap between rich Ethiopian
+cultural traditions and modern health science through
+engaging, informative and meaningful conversations.
+</p>
 
-    <p>
-        We believe true wellness is not just physical.
-        It is the harmony of mind, body, spirit and lifestyle.
-    </p>
-
-    <h2>Our Mission</h2>
-
-    <p>
-        Our mission is to bridge the gap between rich Ethiopian
-        cultural traditions and modern health science through
-        engaging, informative and meaningful conversations.
-    </p>
-
-    <h2>Our Community</h2>
-
-    <p>
-        This podcast is a platform for Ethiopians around the world,
-        particularly women, to explore useful health and lifestyle
-        topics and learn from medical and social science knowledge.
-    </p>
+<h2>Our Community</h2>
+<p>
+This podcast is a platform for Ethiopians around the world,
+particularly women, to explore useful health and lifestyle
+topics and learn from medical and social science knowledge.
+</p>
+</div>
 </section>
 
-<section class="section highlight">
-    <h2>የጎመን በጤና መልዕክት</h2>
-
-    <p class="amharic" lang="am">
-        የቀድሞ አባቶቻችን "ጎመን በጤና" ይሉ ነበር።
-        ይህ ብሂል ጤና ከምንም በላይ ዋጋ እንዳለው
-        ይመክረናል። ይህ podcast የህክምና እና
-        የማህበራዊ ሳይንስ እውቀትን ከባህላዊ
-        አኗኗራችን ጋር አጣምረን ጤናማ ህይወት
-        እንድንኖር የሚያግዙ ጉዳዮችን
-        የምንወያይበት መድረክ ነው።
-    </p>
+<section class="mission">
+<p class="eyebrow">OUR MESSAGE</p>
+<h2>ጎመን በጤና</h2>
+<p class="amharic" lang="am">
+የቀድሞ አባቶቻችን "ጎመን በጤና" ይሉ ነበር፤
+ይህ ብሂል ጤና ከምንም በላይ ዋጋ እንዳለው ይመክረናል።
+ይህ podcast የህክምና እና የማህበራዊ ሳይንስ
+እውቀትን ከባህላዊ አኗኗራችን ጋር አጣምረን
+ጤናማ ህይወት እንድንኖር የሚያግዙ ጉዳዮችን
+የምንወያይበት መድረክ ነው።
+</p>
 </section>
 
 <footer>
-    <p>© 2026 Gomen be’Tena | ጎመን በጤና</p>
-    <a href="contact.html">Contact Us</a>
+<p>© 2026 Gomen be'Tena | ጎመን በጤና</p>
+<a href="contact.html">Contact Us</a>
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+document.querySelectorAll('nav a').forEach(link=>{
+ if(link.getAttribute('href')===location.pathname.split('/').pop()){
+  link.classList.add('active');
+ }
+});
+</script>
+
 </body>
 </html>
