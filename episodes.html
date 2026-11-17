@@ -2,99 +2,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Episodes | Gomen be’Tena</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Episodes | Gomen be'Tena</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--green:#173d31;--dark:#102a22;--cream:#f7f4eb;--gold:#c8a45d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:#34443c;line-height:1.7}
+header{background:var(--dark);padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{font-family:'Playfair Display',serif;color:white;font-size:24px;text-decoration:none;font-weight:bold}
+.logo span{display:block;color:var(--gold);font-size:14px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover,nav a.active{color:var(--gold)}
+.page-hero{background:var(--green);color:white;text-align:center;padding:90px 20px}
+.eyebrow{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:bold}
+h1,h2,h3{font-family:'Playfair Display',serif}
+h1{font-size:55px;margin:15px 0}
+h2{font-size:34px;color:var(--green);margin-bottom:20px}
+section{padding:75px 9%}
+.btn{display:inline-block;background:var(--gold);color:var(--dark);padding:13px 25px;text-decoration:none;font-weight:bold;border-radius:4px;margin-top:15px}
+.feature{background:var(--green);color:white;padding:40px;border-radius:8px;margin-bottom:50px}
+.feature h2{color:white}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:30px}
+.card{background:white;padding:20px;border-radius:8px;box-shadow:0 8px 25px #0000000c}
+.thumb{height:170px;background:var(--dark);display:grid;place-items:center;color:var(--gold);font-size:25px;font-family:'Playfair Display',serif;margin-bottom:18px}
+.card h3{color:var(--green);margin-bottom:10px}
+.card a{color:var(--green);font-weight:bold}
+.note{font-size:13px;margin-top:25px;color:#68746c}
+footer{background:var(--dark);color:white;text-align:center;padding:35px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center;gap:13px}.grid{grid-template-columns:1fr}h1{font-size:40px}section{padding:50px 7%}}
+</style>
 </head>
+
 <body>
 
-<header class="header">
-    <a href="index.html" class="logo">
-        Gomen be’Tena <span>ጎመን በጤና</span>
-    </a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="episodes.html" class="active">Episodes</a>
-        <a href="wellness.html">Wellness</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header>
+<a href="index.html" class="logo">Gomen be'Tena <span>ጎመን በጤና</span></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="episodes.html" class="active">Episodes</a>
+<a href="wellness.html">Wellness</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
 <section class="page-hero">
-    <p class="eyebrow">WATCH • LEARN • DISCOVER</p>
-    <h1>Our Episodes</h1>
-    <p>Conversations that inspire healthier living.</p>
+<p class="eyebrow">WATCH • LISTEN • LEARN</p>
+<h1>Our Episodes</h1>
+<p>Conversations that inspire healthier living.</p>
 </section>
 
-<section class="section">
-    <div class="episode-feature">
-        <div>
-            <p class="eyebrow">OUR YOUTUBE CHANNEL</p>
-            <h2>Explore Our Video Podcast</h2>
-            <p>
-                Watch our conversations on health, culture,
-                lifestyle and wellbeing.
-            </p>
-            <a class="btn" target="_blank"
-               href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">
-               Watch on YouTube
-            </a>
-        </div>
-    </div>
+<section>
+<div class="feature">
+<p class="eyebrow">GOMEN BE'TENA ON YOUTUBE</p>
+<h2>Discover Our Video Podcast</h2>
+<p>Explore our video discussions about health, culture and lifestyle.</p>
+<p>1.74K Subscribers | 19 Videos | 64,422 Views</p>
+<a class="btn" target="_blank" href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">Visit YouTube Channel</a>
+</div>
 
-    <h2>Latest Episodes</h2>
+<h2>Explore Our Discussions</h2>
 
-    <div class="episode-grid">
-        <div class="episode-card">
-            <div class="episode-image">Episode 01</div>
-            <h3>Health and Lifestyle Conversations</h3>
-            <p>Discover our discussions and insights.</p>
-            <a target="_blank"
-               href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">
-               Watch channel →
-            </a>
-        </div>
+<div class="grid">
+<div class="card">
+<div class="thumb">Health & Wellness</div>
+<h3>Physical Health</h3>
+<p>Explore conversations about general health awareness.</p>
+<a target="_blank" href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">Watch on YouTube →</a>
+</div>
 
-        <div class="episode-card">
-            <div class="episode-image">Episode 02</div>
-            <h3>Culture Meets Modern Health</h3>
-            <p>Exploring traditional wisdom and modern knowledge.</p>
-            <a target="_blank"
-               href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">
-               Watch channel →
-            </a>
-        </div>
+<div class="card">
+<div class="thumb">Mind & Spirit</div>
+<h3>Mental Wellbeing</h3>
+<p>Meaningful discussions about emotional wellbeing.</p>
+<a target="_blank" href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">Watch on YouTube →</a>
+</div>
 
-        <div class="episode-card">
-            <div class="episode-image">Episode 03</div>
-            <h3>Wellness and Everyday Living</h3>
-            <p>Conversations about a balanced lifestyle.</p>
-            <a target="_blank"
-               href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">
-               Watch channel →
-            </a>
-        </div>
-    </div>
+<div class="card">
+<div class="thumb">Culture & Food</div>
+<h3>Traditional Wisdom</h3>
+<p>Connecting Ethiopian traditions with modern knowledge.</p>
+<a target="_blank" href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">Watch on YouTube →</a>
+</div>
+</div>
 
-    <p class="note">
-        These are sample topic cards, not verified titles of published videos.
-        Replace them with actual episode titles and YouTube video links.
-    </p>
-
-    <div class="center">
-        <a class="btn" target="_blank"
-           href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">
-           View All 19 Videos
-        </a>
-    </div>
+<p class="note">These cards represent discussion categories, not verified titles of individual published videos.</p>
 </section>
 
 <footer>
-    <p>© 2026 Gomen be’Tena | ጎመን በጤና</p>
+<p>© 2026 Gomen be'Tena | ጎመን በጤና</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+document.querySelectorAll('nav a').forEach(link=>{
+ if(link.getAttribute('href')===location.pathname.split('/').pop()){
+  link.classList.add('active');
+ }
+});
+</script>
+
 </body>
 </html>
