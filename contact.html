@@ -2,83 +2,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Gomen be’Tena</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Gomen be'Tena</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--green:#173d31;--dark:#102a22;--cream:#f7f4eb;--gold:#c8a45d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:#34443c;line-height:1.8}
+header{background:var(--dark);padding:20px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{font-family:'Playfair Display',serif;color:white;font-size:24px;text-decoration:none;font-weight:bold}
+.logo span{display:block;color:var(--gold);font-size:14px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover,nav a.active{color:var(--gold)}
+.page-hero{background:var(--green);color:white;text-align:center;padding:90px 20px}
+.eyebrow{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:bold}
+h1,h2,h3{font-family:'Playfair Display',serif}
+h1{font-size:55px;margin:15px 0}
+h2{font-size:34px;color:var(--green);margin-bottom:20px}
+section{padding:75px 9%}
+.contact-card{max-width:750px;margin:auto;background:white;padding:40px;border-radius:8px;box-shadow:0 8px 25px #0000000c}
+.contact-card a{color:var(--green);font-weight:bold;overflow-wrap:anywhere}
+.contact-card p{margin-bottom:18px}
+.disclaimer{background:#e9e8dc}
+.amharic{font-size:19px;line-height:2.1}
+footer{background:var(--dark);color:white;text-align:center;padding:35px}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center;gap:13px}h1{font-size:40px}section{padding:50px 7%}.contact-card{padding:25px}}
+</style>
 </head>
+
 <body>
 
-<header class="header">
-    <a href="index.html" class="logo">
-        Gomen be’Tena <span>ጎመን በጤና</span>
-    </a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="episodes.html">Episodes</a>
-        <a href="wellness.html">Wellness</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
+<header>
+<a href="index.html" class="logo">Gomen be'Tena <span>ጎመን በጤና</span></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="episodes.html">Episodes</a>
+<a href="wellness.html">Wellness</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
 </header>
 
 <section class="page-hero">
-    <p class="eyebrow">LET'S CONNECT</p>
-    <h1>Contact Us</h1>
-    <p>For business inquiries, collaborations and partnerships.</p>
+<p class="eyebrow">LET'S CONNECT</p>
+<h1>Contact Us</h1>
+<p>Let's create meaningful conversations together.</p>
 </section>
 
-<section class="section contact-section">
+<section>
+<div class="contact-card">
+<h2>Business Inquiries & Collaborations</h2>
+<p>
+For business inquiries, partnerships, sponsorships
+and collaborations, please contact us.
+</p>
 
-    <div class="contact-card">
-        <h2>Business Inquiries</h2>
+<p><strong>Email Address</strong></p>
+<a href="mailto:GomenbeTenapodcast@gmail.com">GomenbeTenapodcast@gmail.com</a>
 
-        <p>
-            We welcome meaningful collaborations,
-            partnerships and opportunities to promote
-            health awareness and positive lifestyle conversations.
-        </p>
+<p><strong>YouTube Channel</strong></p>
+<a target="_blank" href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">
+Gomen be'Tena Health & Lifestyle Podcast
+</a>
 
-        <p><strong>Email:</strong></p>
-        <a href="mailto:GomenbeTenapodcast@gmail.com">
-            GomenbeTenapodcast@gmail.com
-        </a>
-
-        <p><strong>YouTube:</strong></p>
-        <a target="_blank"
-           href="https://www.youtube.com/@GomenbeTenaHealthLifestylePodc">
-           Gomen be’Tena YouTube Channel
-        </a>
-
-        <p><strong>New episodes:</strong> Every Thursday</p>
-    </div>
-
+<p><strong>New Episodes:</strong> Every Thursday</p>
+</div>
 </section>
 
-<section class="section disclaimer">
-    <h2>Medical Disclaimer</h2>
+<section class="disclaimer">
+<h2>Medical Disclaimer</h2>
+<p>
+The content on this channel is for informational and educational
+purposes only and does not constitute medical advice.
+Consult a qualified healthcare professional for medical concerns.
+</p>
 
-    <p>
-        The content on this channel is for informational
-        and educational purposes only and does not constitute
-        medical advice. Consult a qualified healthcare
-        professional for medical concerns.
-    </p>
-
-    <h3 lang="am">የህክምና ማሳሰቢያ</h3>
-
-    <p class="amharic" lang="am">
-        በዚህ ሰርጥ ላይ የሚቀርቡት ይዘቶች በሙሉ
-        ለመረጃ እና ለግንዛቤ ማሳደጊያ ብቻ
-        የተዘጋጁ ናቸው። ለማንኛውም የህክምና
-        ጉዳይ የጤና ባለሙያን ያማክሩ።
-    </p>
+<h2 lang="am">የህክምና ማሳሰቢያ</h2>
+<p class="amharic" lang="am">
+በዚህ ሰርጥ ላይ የሚቀርቡት ይዘቶች በሙሉ
+ለመረጃ እና ለግንዛቤ ማሳደጊያ ብቻ የተዘጋጁ ናቸው።
+ለማንኛውም የህክምና ጉዳይ የጤና ባለሙያን ያማክሩ።
+</p>
 </section>
 
 <footer>
-    <p>© 2026 Gomen be’Tena | ጎመን በጤና</p>
+<p>© 2026 Gomen be'Tena | ጎመን በጤና</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+document.querySelectorAll('nav a').forEach(link=>{
+ if(link.getAttribute('href')===location.pathname.split('/').pop()){
+  link.classList.add('active');
+ }
+});
+</script>
+
 </body>
 </html>
